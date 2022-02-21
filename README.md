@@ -1,1 +1,13 @@
 # NetworkGraphMaker
+this tool is a method to generate gml file which can be the input data of Cytoscape.
+
+# usage
+To run this tool, you should prepare the result file of GTDB-Tk, CheckM, bwa (Hi-C reads to scaffolds, in sam format), readcount.
+```
+python gmlFileMaker.py (1)scaffoldList.txt (2)GTDB-Tk_result.tsv (3)CheckM_result.tsv (4)samfile.sam (5)readcount.tsv
+
+scaffoldList.txt		list of scaffold name
+GTDB-Tk_result.tsv	GTDB-Tk result file
+CheckM_result.tsv		CheckM result file
+samfile.sam					samfile
+```
