@@ -1,5 +1,5 @@
 # NetworkGraphMaker
-this tool is a method to generate gml file which can be the input data of Cytoscape.
+this tool is a method to generate a gml file which can be the input data of Cytoscape.
 
 # usage
 To run this tool, you should prepare the result file of GTDB-Tk, CheckM, bwa (Hi-C reads to scaffolds, in sam format), readcount.
