@@ -32,3 +32,7 @@ scaffold3 5
     ・
     ・
 ```
+・CheckM_result.tsv
+```
+Bin_name Scaffold_number  Total_length N50_length Max_length   GAP_rate   GC_rate Completeness    Contamination   Lineage
+```
