@@ -12,3 +12,23 @@ CheckM_result.tsv   CheckM result file
 samfile.sam         samfile
 readcount.tsv       mapped reads count for each scaffold
 ```
+
+## Input file format
+・scaffoldList.txt
+```
+scaffold1
+scaffold2
+scaffold3
+    ・
+    ・
+    ・
+```
+・readcount.tsv
+```
+scaffold1 3
+scaffold2 10
+scaffold3 5
+    ・
+    ・
+    ・
+```
