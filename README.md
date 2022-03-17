@@ -36,3 +36,9 @@ scaffold3 5
 ```
 Bin_name Scaffold_number  Total_length N50_length Max_length   GAP_rate   GC_rate Completeness    Contamination   Lineage
 ```
+
+# additional information
+Sam file is too large to place in this repository. Alternatively, I share path to the sample samfile of Itoh-lab server.
+```
+/data2/takumi/scratch/workspace/assembly/ru2HiC_merged.sam
+```
