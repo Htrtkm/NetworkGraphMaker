@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import re
 import math
@@ -218,16 +220,21 @@ class hicLink:
 
 if __name__ == "__main__":
 	args = sys.argv
+	if len(args) != 7:
+		print("usage:", args[0], "scaffold_list.txt GTDB-Tk.tsv CheckM.tsv read_map.sam read_count.tsv output.gml", file=sys.stderr)
+		sys.exit(1)
+
 	HGTtargets = hgtTargets(args[1])
 	Bins = bins(args[2])
 	CheckM = checkM(args[3])
 	MappingResult = mappingResult(args[4])
-	MappingResult.normalize_readcount("/data1/kajitani/denovo/Bovine_GIT/assembly/each_202102/mapping/ref_bov2_ru/bov2_ru/seq_frag_count.tsv")
-	MappingResult.extractStrongLink(args[1],HGTtargets,CheckM)
+	MappingResult.normalize_readcount(args[5])
+	MappingResult.extractStrongLink(args[6], HGTtargets, CheckM)
 """
 args[1] -> scaffold list
 args[2] -> GTDB-Tk result
 args[3] -> CheckM result
 args[4] -> sam file
 args[5] -> readcount 
+args[6] -> output
 """
